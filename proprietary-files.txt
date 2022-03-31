@@ -1156,7 +1156,7 @@ odm/etc/camera/fwk_config.json
 odm/bin/hw/vendor.oplus.hardware.charger@1.0-service
 odm/etc/init/vendor.oplus.hardware.charger@1.0-service.rc
 odm/etc/permissions/vendor-oplus-hardware-charger.xml
--odm/etc/vintf/manifest/manifest_oplus_charger.xml
+odm/etc/vintf/manifest/manifest_oplus_charger.xml
 odm/lib/vendor.oplus.hardware.charger@1.0.so
 odm/lib64/vendor.oplus.hardware.charger@1.0.so
 
@@ -1175,7 +1175,7 @@ vendor/lib64/vendor.mediatek.hardware.dmc@1.2.so
 odm/lib64/liboemcrypto.so
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
@@ -1312,7 +1312,7 @@ vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so|1c170c8e48c5cd52fd0bc9
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 odm/bin/init.oplus.fingerprints.sh
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
--odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
+odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
 odm/lib64/hw/fingerprint.focaltech.default.so
 odm/lib64/hw/fingerprint.goodix_G2.default.so
 odm/lib64/hw/fingerprint.goodix_G3.default.so
@@ -1475,8 +1475,8 @@ vendor/lib64/hw/gps.default.so
 vendor/lib64/libDR.so
 
 # Hotword Enrollment
--my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar
--my_product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4.apk:product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
+my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar
+my_product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4.apk:product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
 
 # IMS - from TECNO-CK9n UP1A.230519.001
 system_ext/bin/vtservice|59adc81ee1ad1f3fb4942cd6e8e7100325002eb2
@@ -1489,7 +1489,7 @@ system_ext/lib64/libimsma_socketwrapper.so|1f9b83322c41e5b0a7b3130f74a38ddb14f57
 system_ext/lib64/libmtk_vt_service.so|302d3ab3c5b3fa0107520fe36098b32cd0a8dd96
 system_ext/lib64/libmtk_vt_wrapper.so|af4d486c516c920ea99c362aebbf04180e96035c
 system_ext/lib64/libsignal.so|0f55bb64c660fe4cda2b695121580b054f026e73
--system_ext/lib64/libsink.so:system_ext/lib64/libsink-mtk.so;FIX_SONAME|eeed08b904105e424b4662d82ba107103f5452b9
+system_ext/lib64/libsink.so:system_ext/lib64/libsink-mtk.so;FIX_SONAME|eeed08b904105e424b4662d82ba107103f5452b9
 system_ext/lib64/libsource.so|a9f4156f17c1e403ddf5e1cc602c88a034dc483b
 system_ext/lib64/libvcodec_cap.so|6973253cb2e4ddf365451ed2ac8db9d04085bc4a
 system_ext/lib64/libvcodec_capenc.so|5527525dfcd25169bc380ac53d8181ffa1429c6f
@@ -1502,19 +1502,19 @@ vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|bb9ff554802e
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor|5e228669d2c575e38fc02a13404f31bc22494b87
 
 # IMS
--system/framework/mediatek-common.jar
--system/framework/mediatek-framework.jar
+system/framework/mediatek-common.jar
+system/framework/mediatek-framework.jar
 system/framework/mediatek-gwsd.jar
 system/framework/mediatek-gwsdv2.jar
--system/framework/mediatek-ims-base.jar
--system/framework/mediatek-ims-common.jar
+system/framework/mediatek-ims-base.jar
+system/framework/mediatek-ims-common.jar
 system/framework/mediatek-ims-extension-plugin.jar
 system/framework/mediatek-ims-legacy.jar
--system/framework/mediatek-telecom-common.jar
--system/framework/mediatek-telephony-common.jar
+system/framework/mediatek-telecom-common.jar
+system/framework/mediatek-telephony-common.jar
 system/framework/mediatek-wfo-legacy.jar
--system/framework/oplus-framework-telephony.jar
--system/framework/oplus-framework.jar
+system/framework/oplus-framework-telephony.jar
+system/framework/oplus-framework.jar
 odm/lib/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
@@ -1557,8 +1557,8 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
 # IMS - from RMX2156_11_F.15
--system/framework/mediatek-telephony-base.jar|168892505929d06405018e1dd007e523d90e94d0
--system/priv-app/ImsService/ImsService.apk|755cbe94aab80d1c5b98b13a047487d382bfa449
+system/framework/mediatek-telephony-base.jar|168892505929d06405018e1dd007e523d90e94d0
+system/priv-app/ImsService/ImsService.apk|755cbe94aab80d1c5b98b13a047487d382bfa449
 
 # Kernel Modules
 vendor/etc/init/init.fmradio_drv.rc
@@ -1751,7 +1751,7 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron;DISABLE_DEPS
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml
 vendor/etc/armnn_app.config
 vendor/lib/mt6785/libnir_neon_driver.so
 vendor/lib/libarmnn.so
@@ -1797,7 +1797,7 @@ odm/lib64/librpmbengclient.so
 odm/bin/hw/vendor.oplus.hardware.mtkmodemaci@1.0-service
 odm/etc/init/vendor.oplus.hardware.mtkmodemaci@1.0-service.rc
 odm/etc/permissions/vendor-oplus-hardware-mtkmodemaci.xml
--odm/etc/vintf/manifest/manifest_oplus_mtkmodemaci.xml
+odm/etc/vintf/manifest/manifest_oplus_mtkmodemaci.xml
 odm/lib/libbsproxy.so
 odm/lib/vendor.oplus.hardware.appradio@1.0.so
 odm/lib/vendor.oplus.hardware.mtkmodemaci@1.0.so
@@ -1962,7 +1962,7 @@ vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc
 odm/etc/sensor/sensor_config.json
--odm/etc/vintf/manifest/manifest_oplusSensor.xml
+odm/etc/vintf/manifest/manifest_oplusSensor.xml
 odm/lib/vendor.oplus.hardware.oplusSensor@1.0.so
 odm/lib64/libhwm-oplus.so;MODULE_SUFFIX=_odm
 odm/lib64/oplus.sensors.ssc.so
@@ -2092,7 +2092,7 @@ vendor/lib64/hw/thermal_hal.so
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
--vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
+vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # WiFi
 odm/etc/wifi/txpowerctrl.cfg
