@@ -57,6 +57,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth-service.mediatek \
     android.hardware.bluetooth.audio-impl
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
