@@ -72,8 +72,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -248,10 +247,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-superior
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-superior
 
 PRODUCT_PACKAGES += \
     WifiOverlay \
