@@ -57,7 +57,7 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    ('odm/bin/hw/vendor.oplus.hardware.charger@1.0-service','vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron','vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek',
+    ('odm/bin/hw/vendor.oplus.hardware.charger@1.0-service','vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron',
      'vendor/lib/libnvram.so', 'vendor/lib/libsysenv.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
     'system_ext/lib64/libimsma.so': blob_fixup()
