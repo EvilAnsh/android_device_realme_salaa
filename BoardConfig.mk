@@ -78,6 +78,8 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions (Dynamic)
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 BOARD_SUPER_PARTITION_GROUPS := main
 BOARD_MAIN_SIZE := 8048869376
 BOARD_MAIN_PARTITION_LIST := system system_ext vendor product odm
