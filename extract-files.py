@@ -90,6 +90,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v32.so'),
     ('vendor/lib/hw/audio.primary.mt6785.so', 'vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so', 'vendor/lib/librt_extamp_intf.so', 'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so', 'vendor/lib64/librt_extamp_intf.so'): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service': blob_fixup()
+        .add_needed('libstagefright_foundation-v33.so'),    
 }  # fmt: skip
 
 module = ExtractUtilsModule(
