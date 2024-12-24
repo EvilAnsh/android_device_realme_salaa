@@ -28,9 +28,4 @@ TARGET_USES_MINI_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DeviceName=RMX2156L1 \
-    DeviceProduct=RMX2156 \
-    BuildDesc="sys_mssi_64_cn_armv82-user 12 SP1A.210812.016 1689241820072 release-keys"
-
 BUILD_FINGERPRINT := realme/RMX2156/RMX2156L1:12/SP1A.210812.016/Q.1579e30_414da:user/release-keys
