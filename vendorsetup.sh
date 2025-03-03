@@ -12,7 +12,7 @@ echo 'Cloning Kernel tree [2/5]'
 rm -rf kernel/realme/mt6785
 if [ ! -d "kernel/realme/mt6785" ]; then
     mkdir -p kernel/realme/mt6785
-    git clone https://github.com/stormbreaker-project/kernel_realme_salaa.git --depth=1 -b 14 kernel/realme/mt6785
+    git clone https://github.com/stormbreaker-project/kernel_realme_salaa.git --depth=1 -b 14 kernel/realme/salaa
 fi
 
 echo 'Cloning Mediatek SEpolicy_vndr [3/5]'
