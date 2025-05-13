@@ -12,7 +12,7 @@ echo 'Cloning Kernel tree [2/5]'
 rm -rf kernel/realme/mt6785
 if [ ! -d "kernel/realme/mt6785" ]; then
     mkdir -p kernel/realme/mt6785
-    git clone https://github.com/stormbreaker-project/kernel_realme_salaa.git --depth=1 -b 14 kernel/realme/salaa
+    git clone https://github.com/PixelOS-Devices/kernel_realme_salaa.git --depth=1 -b fifteen kernel/realme/salaa
 fi
 
 echo 'Cloning Mediatek SEpolicy_vndr [3/5]'
@@ -20,7 +20,7 @@ echo 'Cloning Mediatek SEpolicy_vndr [3/5]'
 rm -rf device/mediatek/sepolicy_vndr
 if [ ! -d "device/mediatek/sepolicy_vndr" ]; then
     mkdir -p device/mediatek/sepolicy_vndr
-    git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git --depth=1 -b lineage-22.1 device/mediatek/sepolicy_vndr
+    git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git --depth=1 -b lineage-22.2 device/mediatek/sepolicy_vndr
 fi
 
 echo 'Cloning Hardware Mediatek [4/5]'
@@ -28,7 +28,7 @@ echo 'Cloning Hardware Mediatek [4/5]'
 rm -rf hardware/mediatek
 if [ ! -d "hardware/mediatek" ]; then
     mkdir -p hardware/mediatek
-    git clone https://github.com/LineageOS/android_hardware_mediatek.git --depth=1 -b lineage-22.1 hardware/mediatek
+    git clone https://github.com/LineageOS/android_hardware_mediatek.git --depth=1 -b lineage-22.2 hardware/mediatek
 fi
 
 echo 'Cloning Hardware Oplus [5/5]' 
@@ -36,7 +36,7 @@ echo 'Cloning Hardware Oplus [5/5]'
 rm -rf hardware/oplus
 if [ ! -d "hardware/oplus" ]; then
     mkdir -p hardware/oplus
-    git clone https://github.com/LineageOS/android_hardware_oplus.git --depth=1 -b lineage-22.1 hardware/oplus
+    git clone https://github.com/LineageOS/android_hardware_oplus.git --depth=1 -b lineage-22.2 hardware/oplus
 fi
 
 echo 'Completed, Now proceeding to lunch'
