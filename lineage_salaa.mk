@@ -24,8 +24,11 @@ PRODUCT_MODEL := realme 7/Narzo 20 Pro/Narzo 30 4G
 # To include Gapps
 WITH_GMS := true
 
-# To Build Pixel launcher
-TARGET_INCLUDE_NEXUS := true
+# To Build Google(Dailer, Message, Phone) and BCR
+WITH_GMS_COMMS_SUITE := true
+
+# To Add cinematic wallpaer support (only supported in gapps build not in vanilla remove this flag for vanilla builds)
+TARGET_SUPPORTS_WALLEFFECT := true
 
 # Some more GMS Flag
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
