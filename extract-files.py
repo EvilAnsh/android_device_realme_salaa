@@ -4,14 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-from extract_utils.file import File
 from extract_utils.fixups_blob import (
-    BlobFixupCtx,
     blob_fixup,
     blob_fixups_user_type,
 )
 from extract_utils.fixups_lib import (
-    lib_fixup_remove,
     lib_fixups,
     lib_fixups_user_type,
 )
@@ -19,18 +16,12 @@ from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
-from extract_utils.tools import (
-    llvm_objdump_path,
-)
-from extract_utils.utils import (
-    run_cmd,
-)
 
 namespace_imports = [
     'device/realme/salaa',
-	'hardware/mediatek',
-	'hardware/mediatek/libmtkperf_client',
-	'hardware/oplus',
+    'hardware/mediatek',
+    'hardware/mediatek/libmtkperf_client',
+    'hardware/oplus',
 ]
 
 
@@ -51,9 +42,7 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.oplus.hardware.biometrics.fingerprint@2.1',
         'vendor.oplus.hardware.commondcs@1.0',
     ): lib_fixup_odm_suffix,
-    (
-        'vendor.mediatek.hardware.videotelephony@1.0',
-    ): lib_fixup_vendor_suffix,
+    ('vendor.mediatek.hardware.videotelephony@1.0',): lib_fixup_vendor_suffix,
 }
 
 blob_fixups: blob_fixups_user_type = {
