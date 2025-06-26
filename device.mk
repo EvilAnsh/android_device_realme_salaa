@@ -181,6 +181,12 @@ PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-evo
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-evo
+
 PRODUCT_PACKAGES += \
     SalaaFrameworksOverlay \
     SalaaOplusDozeOverlay \

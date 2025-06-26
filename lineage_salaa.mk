@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/realme/salaa/device.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common Evolution-X stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_salaa
@@ -20,6 +20,11 @@ PRODUCT_DEVICE := salaa
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme 7/Narzo 20 Pro/Narzo 30 4G
+
+# Evolution specific flags
+TARGET_BUILD_APERTURE_CAMERA := false
+WITH_GMS := true
+TARGET_DISABLE_EPPE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 

@@ -1,0 +1,28 @@
+[
+  {
+    "repository"  : "vendor_realme_salaa",
+    "branch"      : "bka",
+    "target_path" : "vendor/realme/salaa"
+  },
+  {
+    "remote"      : "LineageOS",
+    "repository"  : "LineageOS/android_hardware_mediatek",
+    "target_path" : "hardware/mediatek"
+  },
+  {
+    "repository"  : "kernel_realme_salaa",
+    "branch"      : "bka",
+    "target_path" : "kernel/realme/salaa"
+  },
+  {
+    "remote"      : "github-non-los",
+    "repository"  : "YAAP/device_mediatek_sepolicy_vndr",
+    "branch"      : "sixteen",
+    "target_path" : "device/mediatek/sepolicy_vndr"
+  },
+  {
+    "remote"      : "LineageOS-23",
+    "repository"  : "LineageOS/android_hardware_oplus",
+    "target_path" : "hardware/oplus"
+  }
+]
