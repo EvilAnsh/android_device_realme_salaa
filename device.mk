@@ -86,6 +86,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.2-service \
     android.hardware.memtrack-service.mediatek-mali
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false

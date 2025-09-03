@@ -20,6 +20,11 @@
     "target_path" : "device/mediatek/sepolicy_vndr"
   },
   {
+    "repository"  : "hardware_dolby",
+    "branch"      : "bka",
+    "target_path" : "hardware/dolby"
+  },
+  {
     "repository"  : "hardware_oplus",
     "branch"      : "bka",
     "target_path" : "hardware/oplus"
