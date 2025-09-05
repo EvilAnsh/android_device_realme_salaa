@@ -15,5 +15,5 @@ spmfw.img
 sspm.img
 tee.img
 
-# Prevent lk from setting sku prop: sed -i 's/sku/fku/' lk.img
-lk.img|3667a9a6299c1df03dd6b696022da641cf88a179
+# Patched lk by @antagonizzzt
+lk.img|c3be41982f92bb7e7cc3397c4ff8959c1734c4ac
