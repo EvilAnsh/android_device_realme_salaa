@@ -1502,19 +1502,19 @@ vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|bb9ff554802e
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor|5e228669d2c575e38fc02a13404f31bc22494b87
 
 # IMS
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
-framework/mediatek-gwsd.jar
-framework/mediatek-gwsdv2.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
-framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-ims-legacy.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-common.jar
-framework/mediatek-wfo-legacy.jar
--framework/oplus-framework-telephony.jar
--framework/oplus-framework.jar
+-system/framework/mediatek-common.jar
+-system/framework/mediatek-framework.jar
+system/framework/mediatek-gwsd.jar
+system/framework/mediatek-gwsdv2.jar
+-system/framework/mediatek-ims-base.jar
+-system/framework/mediatek-ims-common.jar
+system/framework/mediatek-ims-extension-plugin.jar
+system/framework/mediatek-ims-legacy.jar
+-system/framework/mediatek-telecom-common.jar
+-system/framework/mediatek-telephony-common.jar
+system/framework/mediatek-wfo-legacy.jar
+-system/framework/oplus-framework-telephony.jar
+-system/framework/oplus-framework.jar
 odm/lib/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
@@ -1557,8 +1557,8 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
 # IMS - from RMX2156_11_F.15
--framework/mediatek-telephony-base.jar|168892505929d06405018e1dd007e523d90e94d0
--priv-app/ImsService/ImsService.apk|755cbe94aab80d1c5b98b13a047487d382bfa449
+-system/framework/mediatek-telephony-base.jar|168892505929d06405018e1dd007e523d90e94d0
+-system/priv-app/ImsService/ImsService.apk|755cbe94aab80d1c5b98b13a047487d382bfa449
 
 # Kernel Modules
 vendor/etc/init/init.fmradio_drv.rc
