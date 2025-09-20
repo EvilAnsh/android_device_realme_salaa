@@ -21,16 +21,8 @@ PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme 7/Narzo 20 Pro/Narzo 30 4G
 
-# To include Gapps
-WITH_GMS := true
-
 # To Build Google(Dailer, Message, Phone) and BCR
 WITH_GMS_COMMS_SUITE := true
-
-# Some more GMS Flag
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_STOCK_AICORE := true
 
 # Matrixx
 MATRIXX_BUILD_TYPE := Official
