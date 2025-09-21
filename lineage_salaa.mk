@@ -22,6 +22,7 @@ PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme 7/Narzo 20 Pro/Narzo 30 4G
 
 # Evolution specific flags
+EVO_BUILD_TYPE := Official
 TARGET_BUILD_APERTURE_CAMERA := false
 WITH_GMS := true
 
