@@ -1558,7 +1558,7 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
 # IMS - from RMX2156_11_F.15
 system/framework/mediatek-telephony-base.jar|168892505929d06405018e1dd007e523d90e94d0
-system/priv-app/ImsService/ImsService.apk|755cbe94aab80d1c5b98b13a047487d382bfa449
+system/priv-app/ImsService/ImsService.apk|0604efcf5dffa3a8516eeeb3b847960d87540d7e
 
 # Kernel Modules
 vendor/etc/init/init.fmradio_drv.rc
