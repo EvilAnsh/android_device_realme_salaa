@@ -70,10 +70,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor
 
-# Doze
-PRODUCT_PACKAGES += \
-    OplusDoze
-
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
