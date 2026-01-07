@@ -1820,7 +1820,6 @@ vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
 vendor/bin/mnld
 vendor/bin/mrdump_tool
-vendor/bin/muxreport
 vendor/bin/rttv
 vendor/bin/starter
 vendor/bin/stp_dump3
@@ -1836,7 +1835,6 @@ vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/md_monitor.rc
 vendor/etc/init/mtklog.rc
 vendor/etc/init/mtkrild.rc
-vendor/etc/init/muxreport.rc
 vendor/etc/ecc_list.xml
 vendor/etc/ecc_list_OP01.xml
 vendor/etc/ecc_list_OP02.xml
