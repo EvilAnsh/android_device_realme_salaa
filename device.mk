@@ -99,6 +99,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.engineermode.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.engineermode.xml
 
+# Dolby
+PRODUCT_PACKAGES += \
+    LunarisDolby
+
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio
