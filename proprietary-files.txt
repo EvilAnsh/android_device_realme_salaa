@@ -2131,7 +2131,6 @@ vendor/lib/libwo.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so
-vendor/lib64/libwapi.so
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libwifitest.so
