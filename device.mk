@@ -352,8 +352,6 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Wi-Fi
-$(call soong_config_set,wpa_supplicant_8,board_wlan_mediatek_stability,true)
-
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
