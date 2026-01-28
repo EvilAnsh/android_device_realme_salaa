@@ -87,7 +87,9 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/lib3a.flash.so', 'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
          .add_needed('liblog.so'),
     ('vendor/lib/hw/android.hardware.thermal@2.0-impl.so', 'vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so', 'vendor/lib/libmtkcam_stdutils.so', 'vendor/lib64/hw/android.hardware.thermal@2.0-impl.so', 'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so', 'vendor/lib64/libmtkcam_stdutils.so'): blob_fixup()
-        .replace_needed('libutils.so', 'libutils-v32.so')
+        .replace_needed('libutils.so', 'libutils-v32.so'),
+    ('vendor/lib/hw/audio.primary.mt6785.so', 'vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so', 'vendor/lib/librt_extamp_intf.so', 'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so', 'vendor/lib64/librt_extamp_intf.so'): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
