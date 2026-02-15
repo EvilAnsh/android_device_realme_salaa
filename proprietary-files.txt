@@ -1967,7 +1967,6 @@ odm/lib/vendor.oplus.hardware.oplusSensor@1.0.so
 odm/lib64/libhwm-oplus.so;MODULE_SUFFIX=_odm
 odm/lib64/oplus.sensors.ssc.so
 odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so
-vendor/etc/sensors/hals.conf
 vendor/lib/libhwm.so
 vendor/lib/libimgsensorca.so
 vendor/lib/librgbwlightsensor.so
