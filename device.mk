@@ -339,6 +339,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
+# Viper4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Wi-Fi
 $(call soong_config_set,wpa_supplicant_8,board_wlan_mediatek_stability,true)
 

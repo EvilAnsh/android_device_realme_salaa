@@ -23,5 +23,10 @@
     "repository"  : "hardware_oplus",
     "branch"      : "bka",
     "target_path" : "hardware/oplus"
+  },
+  {
+    "repository"  : "packages_apps_ViPER4AndroidFX",
+    "branch"      : "bka",
+    "target_path" : "packages/apps/ViPER4AndroidFX"
   }
 ]
