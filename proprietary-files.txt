@@ -252,7 +252,6 @@ odm/etc/audio/aurisys_config_hifi3/aurisys_config_hifi3.xml
 odm/etc/audio/test_path/common/mixer_paths.xml
 odm/etc/audio/test_path/mixer_paths.xml
 odm/etc/audio/oplus_audio_features.xml
-odm/etc/audio_effects.xml
 
 # Bluetooth
 vendor/bin/autobt
