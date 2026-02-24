@@ -350,6 +350,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.mediatek
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
