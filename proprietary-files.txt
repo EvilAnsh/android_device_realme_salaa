@@ -1841,7 +1841,6 @@ vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
 vendor/bin/mnld
 vendor/bin/mrdump_tool
-vendor/bin/rttv
 vendor/bin/starter
 vendor/bin/stp_dump3
 vendor/bin/stroke
