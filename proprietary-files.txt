@@ -1980,8 +1980,10 @@ odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc
 odm/etc/sensor/sensor_config.json
 odm/etc/vintf/manifest/manifest_oplusSensor.xml
+odm/lib/libmxmafa.so
 odm/lib/vendor.oplus.hardware.oplusSensor@1.0.so
 odm/lib64/libhwm-oplus.so;MODULE_SUFFIX=_odm
+odm/lib64/libmxmafa.so
 odm/lib64/oplus.sensors.ssc.so
 odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so
 vendor/lib/libhwm.so
