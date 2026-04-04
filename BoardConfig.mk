@@ -76,6 +76,10 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions (Dynamic)
+ifneq ($(WITH_GMS),true)
+# Reserve space for gapps install in Vanilla builds
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+endif
 BOARD_SUPER_PARTITION_GROUPS := main
 BOARD_MAIN_SIZE := 8048869376
 BOARD_MAIN_PARTITION_LIST := system system_ext vendor product odm
