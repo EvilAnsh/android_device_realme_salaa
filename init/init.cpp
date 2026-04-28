@@ -98,69 +98,85 @@ void load_dalvik_properties(void) {
 void set_device_props(void){
 
     char const *operator_code_file = "/proc/oplusVersion/operatorName";
-    std::string operator_code_raw, device, model, market_name, fingerprint;
+    std::string operator_code_raw, hw_device, model, market_name, fingerprint;
+    
+    // The unified device codename across all variants
+    std::string codename = "salaa";
 
     if (ReadFileToString(operator_code_file, &operator_code_raw)) {
         int operator_code = stoi(operator_code_raw);
-	    switch (operator_code) {
+        switch (operator_code) {
             case 140:
             case 141:
             case 146:
             case 149:
-                device="RMX2151";
+                hw_device="RMX2151";
                 model="RMX2151L1";
                 fingerprint="realme/RMX2151/RMX2151L1:12/SP1A.210812.016/Q.bf75e7-1:user/release-keys";
                 market_name="realme 7";
                 break;
             case 142:
-                device="RMX2153";
+                hw_device="RMX2153";
                 model="RMX2153L1";
                 fingerprint="realme/RMX2156/RMX2156L1:12/SP1A.210812.016/Q.11e8c10-4e353:user/release-keys";
                 market_name="realme 7";
                 break;
             case 94:
             case 148:
-                device="RMX2155";
+                hw_device="RMX2155";
                 model="RMX2155L1";
                 fingerprint="realme/RMX2155/RMX2155L1:12/SP1A.210812.016/Q.GDPR.202207131058:user/release-keys";
                 market_name="realme 7";
                 break;
             case 90:
             case 92:
-                device="RMX2156";
+                hw_device="RMX2156";
                 model="RMX2156L1";
                 fingerprint="realme/RMX2156/RMX2156L1:12/SP1A.210812.016/Q.11e8c10-4e353:user/release-keys";
                 market_name="realme Narzo 30 4G";
                 break;
             case 143:
-                device="RMX2161";
+                hw_device="RMX2161";
                 model="RMX2161L1";
                 fingerprint="realme/RMX2156/RMX2156L1:12/SP1A.210812.016/Q.11e8c10-4e353:user/release-keys";
                 market_name="realme Narzo 20 Pro";
                 break;
             case 145:
             case 147:
-                device="RMX2163";
+                hw_device="RMX2163";
                 model="RMX2163L1";
                 fingerprint="realme/RMX2163T2/RMX2163L1:12/SP1A.210812.016/Q.bf75e7-1:user/release-keys";
                 market_name="realme Narzo 20 Pro";
                 break;
             default:
                 LOG(ERROR) << "Unknown operator found: " << operator_code;
-                device="";
+                hw_device="";
                 model="";
                 fingerprint="";
                 market_name="";
-		}
+        }
     }
 
+    // Set standard properties using the prop loop
     set_ro_build_prop("fingerprint", fingerprint);
-    set_ro_build_prop("device", device);
+    
+    // Natively set the device codename across all partitions to 'salaa'
+    set_ro_build_prop("device", codename); 
+    
+    // Set the specific hardware model variants across partitions
     set_ro_build_prop("model", model);
     set_ro_build_prop("name", model);
     set_ro_build_prop("product", model, false);
-    property_override("ro.product.device", device.c_str());
-    property_override("ro.vendor.device", device.c_str());
+    
+    // Set the market name for Settings > About Phone
+    set_ro_build_prop("marketname", market_name);
+    property_override("ro.product.marketname", market_name.c_str());
+
+    // Hardware-specific vendor overrides (Required for HALs like Camera/Fingerprint)
+    if (!hw_device.empty()) {
+        property_override("ro.vendor.device", hw_device.c_str());
+    }
+    
     property_override("bluetooth.device.default_name", market_name.c_str());
     property_override("vendor.usb.product_string", market_name.c_str());
 
