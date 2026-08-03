@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.common-util \
     audio.bluetooth.default \
+    audio.r_submix.default:32 \
     libdynproc \
     libhapticgenerator
 
